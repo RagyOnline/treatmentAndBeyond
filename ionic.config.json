@@ -1,0 +1,7 @@
+{
+  "name": "treatmentAndBeyond",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
