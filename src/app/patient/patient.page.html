@@ -1,0 +1,28 @@
+<app-paitient-header></app-paitient-header>
+<ion-content color="warning" [fullscreen]="true">
+  <div id="container">
+    <div class="menuListHolder">
+      <ion-grid>
+        <ion-row>
+          <ion-col sizeXs="12" sizeMd="6">
+            <ion-button class="height-auto" expand="block" size="large" routerLink="patientChooseEng">
+              <ion-text class="paragraph">Caring for you
+                <span class="block">during treatment with targeted therapy</span>
+
+              </ion-text>
+            </ion-button>
+          </ion-col>
+          <ion-col sizeXs="12" sizeMd="6">
+            <ion-button class="height-auto" expand="block" size="large" routerLink="patientChooseArb">
+              <ion-text class="paragraph arabicTxt">نعتني بك
+                <span class="block arabicTxt">أثناء فترة العلاج الموجه</span>
+              </ion-text>
+            </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-patient-footer></app-patient-footer>

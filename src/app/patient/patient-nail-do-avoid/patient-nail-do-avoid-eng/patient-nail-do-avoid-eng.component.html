@@ -1,0 +1,36 @@
+<app-paitient-header></app-paitient-header>
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container">
+   <ion-grid>
+           <h1 class="pageTitle" [class.arabicTxt]="page.rtl">{{page.title}}</h1>
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="active" [class.arabicTxt]="page.rtl" id="DO-tab" data-toggle="tab" href="#DO" role="tab" aria-controls="DO" aria-selected="true">Do</a>
+            </li>
+            <li class="nav-item">
+              <a class="" [class.arabicTxt]="page.rtl" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab" aria-controls="AVOID" aria-selected="true">Avoid</a>
+            </li>
+          </ul>
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade show active" id="DO">
+              <div class="doAvoid clearfix" *ngFor="let item of page.toDoListData; let i = index">
+                <ion-row [class.direction-rtl]="page.rtl">
+                  <ion-col sizeXs="4"><div class="doAvoidImg"><img src="{{item.imgURL}}" /><span class="glyphicon glyphicon-ok"></span></div></ion-col>
+                  <ion-col sizeXs="8"><div class="doAvoidTxt" [class.arabicTxt]="page.rtl">{{item.caption}}</div></ion-col>
+                </ion-row>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="AVOID">
+              <div class="doAvoid clearfix" *ngFor="let item of page.toAvoidListData; let i = index">
+                <ion-row [class.direction-rtl]="page.rtl">
+                  <ion-col sizeXs="4"><div class="doAvoidImg"><img src="{{item.imgURL}}" /><span class="glyphicon glyphicon-remove"></span></div></ion-col>
+                  <ion-col sizeXs="8"><div class="doAvoidTxt" [class.arabicTxt]="page.rtl">{{item.caption}}</div></ion-col>
+                </ion-row>
+              </div>
+            </div>
+          </div>
+    </ion-grid>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-patient-footer></app-patient-footer>

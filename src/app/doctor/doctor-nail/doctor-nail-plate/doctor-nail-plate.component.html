@@ -1,0 +1,57 @@
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container">
+    <ion-grid>
+      <h4 class="pageTitle" [class.arabicTxt]="false">Nail plate</h4>
+      <h2 class="headSubTitle" [class.arabicTxt]="false">NAIL<sup>(1-7)</sup> ... Nail Changes</h2>
+      <ion-row>
+        <ion-col sizeXs="4" offsetXs="4">
+        <div class="img">
+          <a data-toggle="modal" data-target="#img1"><img src="/assets/img/nail-plate.jpg" /></a>
+        </div>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Clinically</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Management</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs">
+            <p>
+              Onycholysis (separation of plate from bed) & Ridging
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs">
+            <p>• Nail lubricants and moisturizer creams 5 times daily.<br />
+              • Biotin 5mg tabs once daily (emperical).</p>
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>
+<div class="modal fade" id="img1" tabindex="-1" data-backdrop="false" aria-labelledby="img1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content forImg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nail plate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/assets/img/nail-plate.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
