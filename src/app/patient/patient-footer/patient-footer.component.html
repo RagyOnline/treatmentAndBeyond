@@ -6,8 +6,11 @@
     <ion-buttons slot="start" routerLink="/home">
       <ion-icon slot="icon-only" name="home-outline"></ion-icon>
     </ion-buttons>
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" *ngIf="PatientNote" (click)="openNotePopup()">
       <ion-text>Note</ion-text>
+    </ion-buttons>
+    <ion-buttons slot="end" *ngIf="PatientReferences" (click)="openPatientReferencesPopup()">
+      <ion-text>References</ion-text>
     </ion-buttons>
   </ion-toolbar>
 </ion-footer>

@@ -1,0 +1,56 @@
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <h4 class="pageTitle">Trichomegally, Hirsutism & Hypertrichosis “Hair gain” <br />Grade 2</h4>
+      <ion-row>
+        <ion-col sizeXs="12">
+          <h2 class="headSubTitle">HAIR<sup>(1-6)</sup> ...</h2>
+          <h2 class="headSubTitle">Sites:<br />
+            • Facial hair: Beard, moustache, Eyelashes and Eyebrows<br />
+            • Body Hair</h2>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Clinically</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Management</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs">
+            <p>
+              Increased hair length, thickness and/or density<br />
+              2A) Require regular shaving or removal of hairs in order to camouflage +/- mild irritation<br />
+              2B) Require frequent shaving or destruction of the hair to camouflage +/- irritation & Inability to
+              function normally in social, personal or professional life.
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs">
+            <p>• Shaving or hair removal procedures<br />
+              • Eflornithine cream twice daily (emperical)</p>
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../hairGain"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              1</a>
+            <a class="howtoGrade" routerLink="../hairHowToGrade">How to grade?</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>

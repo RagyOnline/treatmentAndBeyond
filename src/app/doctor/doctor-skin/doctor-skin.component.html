@@ -1,3 +1,34 @@
-<p>
-  doctor-skin works!
-</p>
+<ion-content color="warning" [fullscreen]="true">
+  <div id="container2">
+    <div class="fakhryImg fakhry borderOverlay"><img src="/assets/img/fakhry-only.png" /></div>
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../skinG1">
+            <ion-text class="paragraph">Grade 1
+            </ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../skinG2">
+            <ion-text class="paragraph">Grade 2
+            </ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../skinG3">
+            <ion-text class="paragraph">Grade 3
+            </ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../skinHowToGrade">
+            <ion-text class="paragraph">How to grade
+            </ion-text>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<app-doctor-footer></app-doctor-footer>

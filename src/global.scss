@@ -35,6 +35,7 @@ h6 {
   padding: 0;
   font-family: "open_sansbold", Tahoma, Geneva, sans-serif;
   line-height: 150%;
+  text-transform: capitalize;
 }
 h1 {
   font-size: 28px;
@@ -80,9 +81,25 @@ a {
   font-family: "open_sanslight", Tahoma, Geneva, sans-serif;
   font-size: 14px;
   letter-spacing: 0;
+  text-transform: capitalize;
 }
-a[href]{text-decoration: none;}
-.popOver{outline: none; border:0 none; text-decoration: underline;}
+a[href] {
+  text-decoration: none;
+}
+label {
+  &{background: #075e9c;
+  color: #fff;
+  display: block;
+  text-align: left;
+  padding: 5px;}
+  input[type=radio]{width: 20px; height: 20px; display: inline; vertical-align: middle;}
+}
+.card{background-color: rgba(255, 255, 255, 0.3);}
+.popOver {
+  outline: none;
+  border: 0 none;
+  text-decoration: underline;
+}
 p {
   color: #075e9c;
 }
@@ -145,28 +162,13 @@ ion-content {
   }
 }
 #container {
-  text-align: center;
+  padding-bottom: 40px;
   // position: absolute;
   // left: 0;
   // right: 0;
   // top: 50%;
+  //text-align: center;
   // transform: translateY(-50%);
-}
-
-#container strong {
-  // font-size: 20px;
-  // line-height: 26px;
-}
-
-#container p {
-  // font-size: 16px;
-  // line-height: 22px;
-  // color: #8c8c8c;
-  // margin: 0;
-}
-
-#container a {
-  text-decoration: none;
 }
 .height-auto {
   height: auto;
@@ -175,6 +177,9 @@ ion-content {
 .paragraph {
   & {
     padding: 10px;
+    text-transform: capitalize;
+    letter-spacing: 0;
+    text-align: center;
   }
   span.block {
     display: block;
@@ -417,11 +422,44 @@ ul.nav-tabs {
   top: -20px;
   left: 50%;
 }
+.controlerLinksHolder {
+  padding-bottom: 65px;
+}
+#controlerLinksHolder {
+  & {
+    position: fixed;
+    bottom: 60px;
+    left: 10px;
+    right: 10px;
+  }
+  .controlerLinks {
+    background: #075e9c;
+    padding: 10px;
+    margin: 15px 0 0;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+  }
+  a {
+    display: block;
+    color: #fff;
+  }
+  span {
+    color: #fff;
+  }
+  .gradesNom {
+    float: left;
+    margin-right: 10px;
+  }
+  .howtoGrade {
+    float: right;
+  }
+}
 .img {
   -webkit-border-radius: 50% 50% 50% 50%;
   -moz-border-radius: 50% 50% 50% 50%;
   border-radius: 50% 50% 50% 50%;
-  margin: 0 -10px;
+  margin: 20px 0;
   overflow: hidden;
 }
 span.small {
@@ -448,13 +486,48 @@ span.small {
   font-size: 18px;
   font-weight: bold;
 }
-.forImg{
-  &{}
-  .modal-header{
-    &{padding: 10px; position: relative;}
-    .close{margin: -10px -10px -10px auto; padding: 10px 20px;}
+.menuListRegular {
+  margin-top: 5px;
+  background-color: #075e9c;
+}
+.menuListRegular * {
+  color: #fff !important;
+}
+.menuListRegular .headTitle {
+  margin-bottom: 0;
+}
+.menuListRegular > a {
+  display: block;
+  padding: 5px 10px;
+  font-size: 16px;
+  text-align: center;
+}
+.perventionMenu .menuListRegular {
+  display: table;
+  width: 100%;
+}
+.perventionMenu .menuListRegular > a {
+  display: table-cell;
+  width: 100%;
+  height: 83px;
+  vertical-align: middle;
+}
+.forImg {
+  & {
   }
-  .modal-body{padding: 10px;}
+  .modal-header {
+    & {
+      padding: 10px;
+      position: relative;
+    }
+    .close {
+      margin: -10px -10px -10px auto;
+      padding: 10px 20px;
+    }
+  }
+  .modal-body {
+    padding: 10px;
+  }
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .menuListRegular * {

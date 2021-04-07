@@ -1,3 +1,28 @@
-<p>
-  doctor-hair works!
-</p>
+<ion-content color="warning" [fullscreen]="true">
+  <div id="container2">
+    <div class="elleImg elle borderOverlay"><img src="/assets/img/elle-only2.png" /></div>
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../hairLoss">
+            <ion-text class="paragraph">Hair loss
+            </ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../hairGain">
+            <ion-text class="paragraph">Hair gain
+            </ion-text>
+          </ion-button>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="3">
+          <ion-button class="height-auto" expand="block" size="large" routerLink="../hairHowToGrade">
+            <ion-text class="paragraph">How to grade
+            </ion-text>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
+<app-doctor-footer></app-doctor-footer>

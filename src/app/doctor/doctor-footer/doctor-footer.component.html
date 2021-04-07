@@ -6,10 +6,10 @@
     <ion-buttons slot="start" routerLink="/home">
       <ion-icon slot="icon-only" name="home-outline"></ion-icon>
     </ion-buttons>
-    <ion-buttons class="mr-15" slot="end">
+    <ion-buttons class="mr-15" slot="end" (click)="openDisclaimerPopup()">
       <ion-text>Disclaimer</ion-text>
     </ion-buttons>
-    <ion-buttons slot="end">
+    <ion-buttons slot="end" (click)="openReferencesPopup()">
       <ion-text>References</ion-text>
     </ion-buttons>
   </ion-toolbar>

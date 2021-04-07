@@ -12,7 +12,10 @@ import { DoctorNailFoldComponent } from "./doctor-nail/doctor-nail-fold/doctor-n
 import { DoctorNailFingertipsComponent } from "./doctor-nail/doctor-nail-fingertips/doctor-nail-fingertips.component";
 import { DoctorHairComponent } from "./doctor-hair/doctor-hair.component";
 import { DoctorHairLossComponent } from "./doctor-hair/doctor-hair-loss/doctor-hair-loss.component";
+import { DoctorHairLoss2Component } from "./doctor-hair/doctor-hair-loss2/doctor-hair-loss2.component";
 import { DoctorHairGainComponent } from "./doctor-hair/doctor-hair-gain/doctor-hair-gain.component";
+import { DoctorHairGain2Component } from "./doctor-hair/doctor-hair-gain2/doctor-hair-gain2.component";
+import { DoctorHairGain3Component } from "./doctor-hair/doctor-hair-gain3/doctor-hair-gain3.component";
 import { DoctorHairHowToGradeComponent } from "./doctor-hair/doctor-hair-how-to-grade/doctor-hair-how-to-grade.component";
 import { DoctorSkinComponent } from "./doctor-skin/doctor-skin.component";
 import { DoctorSkinG1Component } from "./doctor-skin/doctor-skin-g1/doctor-skin-g1.component";
@@ -66,8 +69,20 @@ const routes: Routes = [
     component: DoctorHairLossComponent
   },
   {
+    path: 'hairLoss2',
+    component: DoctorHairLoss2Component
+  },
+  {
     path: 'hairGain',
     component: DoctorHairGainComponent
+  },
+  {
+    path: 'hairGain2',
+    component: DoctorHairGain2Component
+  },
+  {
+    path: 'hairGain3',
+    component: DoctorHairGain3Component
   },
   {
     path: 'hairHowToGrade',

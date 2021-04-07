@@ -1,3 +1,138 @@
-<p>
-  doctor-skin-g3 works!
-</p>
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeXs="12">
+          <h4 class="pageTitle">Papulo Pustular Eruption <br />Grade 3</h4>
+          <h2 class="headSubTitle">SKIN<sup>(1-10)</sup>... Sites of eruption: For Face, Scalp, Chest or Back</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col sizeXs="4">
+          <div class="img">
+            <a data-toggle="modal" data-target="#img1"><img src="/assets/img/skin-grade3-img1.jpg" /></a>
+          </div>
+        </ion-col>
+        <ion-col sizeXs="4">
+          <div class="img">
+            <a data-toggle="modal" data-target="#img2"><img src="/assets/img/skin-grade3-img2.jpg" /></a>
+          </div>
+        </ion-col>
+        <ion-col sizeXs="4">
+          <div class="img">
+            <a data-toggle="modal" data-target="#img3"><img src="/assets/img/skin-grade3-img3.jpg" /></a>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Clinically</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Management</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs">
+            <p>
+              <span>> 20</span> Papules and/or Pustules or <span>> 5</span> areas of erythema and odema <span>+/-</span>
+              itching and pain or affecting emotions and functions<br />
+              <span class="small">N.B. NCI-CT grading includes a stage 4 designated as Exfoliative, bullous or
+                ulcerating dermatitis “Lyell-like”</span>
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs">
+            <p>Management of grade 2 & 3:<sup>(1-7)</sup><br />
+              <a href="javascript:;" data-toggle="popover" data-trigger="focus"
+                data-content="Vibramycin 100 mg caps">Doxycycline</a> 100-200 mg/day caps + Vitamin K cream containing
+              0.1% 2 × daily and other topicals as before
+            </p>
+            <br />
+            <h6>No response after 4 weeks</h6>
+            <p>Add <a href="javascript:;" data-toggle="popover" data-trigger="focus"
+                data-content="Hostacortine">prednisone 5 mg</a> tabs (0.5 mg/kg) for 10 days</p>
+            <br />
+            <h6>No response after 10 days</h6>
+            <p>Add <a href="javascript:;" data-toggle="popover" data-trigger="focus"
+                data-content="Roaccutane">Isotretinion</a> caps 10 mg/day or 0.3-0.5 mg/kg/day (check serum cholesterol
+              & triglycerides every 2 weeks and signs of Xerosis. Caution should be taken if patient has pyogenic
+              granuloma on digits)</p>
+            <br />
+            <h6>No response after 4 weeks</h6>
+            <p>Culture from pustular lesions if present & treat accordingly or refer</p>
+            <br />
+            <h6>Grade 3 no response</h6>
+            <p>Interrupt anti-EGFR treatment for 2 weeks till rash downgrades</p>
+            <br />
+            <img src="/assets/img/doctor-skin-management.png" />
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../skinG2"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              1</a>
+            <a class="gradesNom" routerLink="../skinG2"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              2</a>
+            <a class="howtoGrade" routerLink="../hairHowToGrade">How to grade?</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>
+<div class="modal fade" id="img1" tabindex="-1" data-backdrop="false" aria-labelledby="img1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content forImg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Papulo Pustular Eruption Grade 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/assets/img/skin-grade3-img1.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img2" tabindex="-1" data-backdrop="false" aria-labelledby="img1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content forImg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Papulo Pustular Eruption Grade 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/assets/img/skin-grade3-img2.jpg" />
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="img3" tabindex="-1" data-backdrop="false" aria-labelledby="img1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content forImg">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Papulo Pustular Eruption Grade 3</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <img src="/assets/img/skin-grade3-img3.jpg" />
+      </div>
+    </div>
+  </div>
+</div>

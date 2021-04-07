@@ -1,3 +1,85 @@
-<p>
-  doctor-skin-ghow-to-grade works!
-</p>
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <ion-row>
+        <ion-col sizeXs="12">
+          <h4 class="pageTitle">How to Grade</h4>
+          <h2 class="headSubTitle">SKIN<sup>(1-10)</sup>... Sites of eruption: For Face, Scalp, Chest or Back</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col sizeXs="12" sizeSm="6">
+          <h1 class="headTitle">Papules</h1>
+          <ion-row>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="papules">
+                  <input name="papules" id="Papu1" [(ngModel)]="papules" value="1" type="radio" /> <5
+                </label>
+              </div>
+            </ion-col>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="papules">
+                  <input name="papules" id="Papu2" [(ngModel)]="papules" value="2" type="radio" /> 6-20
+                </label>
+              </div>
+            </ion-col>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="papules">
+                  <input name="papules" id="Papu3" [(ngModel)]="papules" value="3" type="radio" /> >20
+                </label>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col sizeXs="12" sizeSm="6">
+          <h1 class="headTitle">Areas of erythema and odema</h1>
+          <ion-row>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="areas">
+                  <input name="areas" id="Area1" [(ngModel)]="areas" value="1" type="radio" /> 1
+                </label>
+              </div>
+            </ion-col>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="areas">
+                  <input name="areas" id="Area2" [(ngModel)]="areas" value="2" type="radio" /> 2-5
+                </label>
+              </div>
+            </ion-col>
+            <ion-col sizeXs="4" sizeSm="12">
+              <div class="form-group">
+                <label class="areas">
+                  <input name="areas" id="Area3" [(ngModel)]="areas" value="3" type="radio" /> >5
+                </label>
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col sizeXs="12" offsetXs="0" sizeSm="4" offsetSm="4">
+          <ion-button (click)="submit()" expand="block" size="large">Go</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../skinG2"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              1</a>
+            <a class="gradesNom" routerLink="../skinG2"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              2</a>
+            <a class="gradesNom" routerLink="../skinG3"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              3</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>

@@ -1,3 +1,54 @@
-<p>
-  doctor-hair-gain works!
-</p>
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <h4 class="pageTitle">Trichomegally, Hirsutism & Hypertrichosis “Hair gain” <br />Grade 1</h4>
+      <ion-row>
+        <ion-col sizeXs="12">
+          <h2 class="headSubTitle">HAIR<sup>(1-6)</sup> ...</h2>
+          <h2 class="headSubTitle">Sites:<br />
+            • Facial hair: Beard, moustache, Eyelashes and Eyebrows<br />
+            • Body Hair</h2>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Clinically</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Management</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs">
+            <p>
+              Increase in length, thickness and/or density of hair that the patient is able to camouflage by periodic
+              shaving, bleaching or removal of individual hairs.
+            </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs">
+            <p>• Shaving or hair removal procedures<br />
+              • Eflornithine cream twice daily (emperical)</p>
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../hairGain2">Grade 2 <span
+                class="glyphicon glyphicon-chevron-right"></span></a>
+            <a class="howtoGrade" routerLink="../hairHowToGrade">How to grade?</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>

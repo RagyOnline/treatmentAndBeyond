@@ -1,0 +1,51 @@
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <h4 class="pageTitle">Scalp Alopecia “Hair loss” <br />Grade 2</h4>
+      <ion-row>
+        <ion-col sizeXs="12">
+         <h2 class="headSubTitle">HAIR<sup>(1-6)</sup> ...</h2>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Clinically</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Management</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs">
+            <p>
+              2A) <span>50%-74%</span> hair loss, difficult to camouflage with change in hair style and may require hairpiece.<br />
+              <br />
+              2B) <span>≥75%</span> hair loss that requires a full wig to camouflage OR cicatricial “fibrotic” hair loss covering <span>≥ 5%</span> scalp surface area.
+          </p>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs">
+            <p>Hair piece or wig</p>
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../hairLoss"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              1</a>
+            <a class="howtoGrade" routerLink="../hairHowToGrade">How to grade?</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>

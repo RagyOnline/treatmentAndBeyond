@@ -1,3 +1,85 @@
-<p>
-  doctor-hair-how-to-grade works!
-</p>
+<ion-content color="warning" [fullscreen]="false">
+  <div id="_container" class="controlerLinksHolder">
+    <ion-grid>
+      <h4 class="pageTitle">How to Grade</h4>
+      <ion-row>
+        <ion-col sizeXs="12">
+          <h2 class="headSubTitle">HAIR<sup>(1-6)</sup> ...</h2>
+        </ion-col>
+      </ion-row>
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="active" [class.arabicTxt]="false" id="DO-tab" data-toggle="tab" href="#DO" role="tab"
+            aria-controls="DO" aria-selected="true">Hair loss</a>
+        </li>
+        <li class="nav-item">
+          <a class="" [class.arabicTxt]="false" id="AVOID-tab" data-toggle="tab" href="#AVOID" role="tab"
+            aria-controls="AVOID" aria-selected="true">Hair gain</a>
+        </li>
+      </ul>
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane fade show active" id="DO">
+          <div class="doctorTabs clearfix">
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairLoss">
+                  < 50%</a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairLoss2">50% - 74%</a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairHowToGrade">75%</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane fade" id="AVOID">
+          <div class="doctorTabs clearfix">
+            <h1 class="headSubTitle">Increased hair length, thickness and/or density:</h1>
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairGain">
+                  That the patient is able to camouflage by periodic shaving, bleaching or removal of individual hairs.
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairGain2">
+                  Require regular shaving or removal of hairs in order to camouflage +/- mild irritation
+                </a>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="menuListRegular">
+                <a routerLink="../hairGain2">
+                  Require frequent shaving or destruction of the hair to camouflage +/- irritation & Inability to
+                  function normally in social, personal or professional life.
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ion-grid>
+    <div id="controlerLinksHolder">
+      <ion-row>
+        <ion-col sizeSm="6" offsetSm="6">
+          <div class="controlerLinks clearfix">
+            <a class="gradesNom" routerLink="../hairGain"><span class="glyphicon glyphicon-chevron-left"></span> Grade
+              1</a>
+            <a class="gradesNom" routerLink="../hairGain2"><span class="glyphicon glyphicon-chevron-left"></span>
+              Grade 2</a>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>
+<!-- Footer without a border -->
+<app-doctor-footer></app-doctor-footer>
